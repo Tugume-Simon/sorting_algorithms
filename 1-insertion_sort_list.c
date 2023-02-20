@@ -13,7 +13,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *check;
 	listint_t *cmp;
 
-	if (*list == NULL)
+	if (list == NULL || *list == NULL)
 		exit(EXIT_FAILURE);
 
 	curr = *list;
